@@ -160,7 +160,7 @@
         </div>
 
         <div class="card">
-            <div class="head2 yellow">
+            <div class="headB yellow">
                 <div class onclick="show4()">JavaScript</div>
             </div>
             <div class="innercard">
@@ -204,30 +204,30 @@
             <div class="head dark">
                 <div class onclick="show5()">Hode, kropp og ben</div>
             </div>
-            <div class="innercard">
+            <div class="innercard" class="bodies">
                 <div id="bodyS"></div>
                 <script>
                     function show5() {
                         blankAll();
                         document.getElementById("bodyS").innerHTML = /*html*/ `
-                <div>
-                    <button>◀</button>
+                <div id="allheads" class="bodyPart">
+                    <button onclick="head4()">◀</button>
                     <img src="img/head1.png" class="image" />
-                    <button>▶</button>
+                    <button onclick="head2()">▶</button>
                 </div>
-                <div>
-                    <button>◀</button>
+                <div id="allbody">
+                    <button onclick="body4()">◀</button>
                     <img src="img/body1.png" class="image" />
-                    <button>▶</button>
+                    <button onclick="body2()">▶</button>
                 </div>
-                <div>
-                    <button>◀</button>
+                <div id="alllegs">
+                    <button onclick="legs4()">◀</button>
                     <img src="img/legs1.png" class="image" />
-                    <button>▶</button>
+                    <button onclick="legs2()">▶</button>
                 </div>
                 `;
-                }
-               </script>
+                    }
+                </script>
             </div>
         </div>
         <script>
@@ -239,5 +239,6 @@
                 document.getElementById("bodyS").innerHTML = "";
             }
         </script>
+        <script src="Body.js"></script>
     </body>
 </html>

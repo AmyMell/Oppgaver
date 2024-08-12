@@ -48,7 +48,7 @@ p {
     padding-left: 10px;
 }
 
-.head2 {
+.headb {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: x-large;
@@ -60,4 +60,16 @@ p {
 .image {
     width: 50%;
     text-align: center;
+}
+
+.bodyPart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bodies{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
